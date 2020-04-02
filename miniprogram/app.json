@@ -1,0 +1,49 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/classic/classic",
+    "pages/userinfo/userinfo",
+    "components/epsoide/epsoide",
+    "components/wemark/wemark",
+    "components/listbox/listbox",
+    "components/imageButton/imageButton",
+    "pages/subject/subject",
+    "pages/browsing/browsing",
+    "pages/collect/collect",
+    "pages/details/details"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "疯狂刷题",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": 100
+  },
+  "tabBar": {
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "color": "#c7c7c7",
+    "list": [
+      {
+        "selectedIconPath": "/images/tab/classic@highlight.png",
+        "pagePath": "pages/classic/classic",
+        "text": "首页",
+        "iconPath": "/images/tab/classic.png"
+      },
+      {
+        "selectedIconPath": "/images/tab/book@highlight.png",
+        "pagePath": "pages/subject/subject",
+        "text": "刷题",
+        "iconPath": "/images/tab/book.png"
+      },
+      {
+        "selectedIconPath": "/images/tab/my@highlight.png",
+        "pagePath": "pages/userinfo/userinfo",
+        "text": "我的",
+        "iconPath": "/images/tab/my.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

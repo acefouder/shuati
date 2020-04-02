@@ -1,0 +1,16 @@
+<view class='classic-container'>
+
+  <view class='header'>
+      <v-epsoide class='epsoide' index="{{index}}" bind:add="add"/>
+  </view>
+
+  <view class='listbox'>
+    <v-listbox list="{{list}}" bind:deleteItem="deleteItem" />
+  </view>
+
+  <v-essay img="{{image}}" content="{{content}}"/>
+
+  <!-- <view class='ad'>
+    <ad unit-id="adunit-0092e308af8a88a5"></ad>
+  </view> -->
+</view>

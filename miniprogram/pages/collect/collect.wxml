@@ -1,0 +1,7 @@
+<!-- <view class='classic-container'> -->
+
+  <view class='listbox'>
+    <v-listbox list="{{list}}" bind:deleteItem="deleteItem" bind:click="click"/>
+  </view>
+
+<!-- </view> -->

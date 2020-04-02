@@ -1,0 +1,13 @@
+<view class="item-box">
+  <view class="items">           
+                            <!-- 默认是{{index}} -->
+    <view wx:for="{{list}}"  wx:key="index"  class="item">
+      <view bindtap='click' bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" 
+      bind:tap="details" data-index="{{index}}" style="{{item.txtStyle}}" class="inner txt">
+      {{item.title}}</view>
+      <!-- <view wx:if="{{index != 0}}" bind:tap="details" data-index="{{index}}" style="{{item.txtStyle}}" class="inner txt">
+      {{item.title}}</view> -->
+      <view data-index="{{index}}" bindtap = "delItem" class="inner del">删除</view>
+    </view>
+  </view>
+</view>

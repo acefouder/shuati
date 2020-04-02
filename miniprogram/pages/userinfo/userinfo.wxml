@@ -1,0 +1,65 @@
+<view class="container1">
+  <image src="/images/my/my@bg.png" class="bg"></image>
+  <v-imageButton wx:if="{{!hasUserInfo}}" open-type="getUserInfo" class="avatar-position" bind:getuserinfo="onGetUserInfo">
+     <image slot="img" class="avatar" src="/images/my/my.png" /> 
+  </v-imageButton>
+  <view class="avatar-container avatar-position">
+    <image src="{{userInfo.avatarUrl}}" wx:if="{{hasUserInfo}}" class="avatar" />
+    <open-data wx:if="{{hasUserInfo}}" type="userNickName"></open-data>
+  </view>
+  <view class="about-container">
+    <view class="about-us">
+      <button open-type="contact" session-from="weapp" class='background-color'>
+        <image src='images/opinion.png' ></image>
+      </button>
+      <text class="description">意见反馈</text>
+    </view>
+    <view class="about-us">
+      <button bindtap="handleTapShareButton" open-type="share" class='background-color'>
+        <image src='images/share.png' ></image>
+      </button>
+      <text class="description">好友分享</text>
+    </view>
+  </view>
+
+  <view class='tab' bindtap='sponsor'>
+    <view class='left'>
+      <image src='images/sponsor.png' class='leftImage'></image>
+      <text class='text'>支持作者</text>
+    </view>
+    <button open-type="contact" session-from="weapp" class='background-color'>
+    </button>
+    <image src='images/right.png' class='arrow'></image>
+  </view>
+  <view class='line'></view>
+
+  <view class='tab' bindtap='browsing'>
+    <view class='left'>
+      <image src='images/title.png' class='leftImage'></image>
+      <text class='text'>我的题库</text>
+    </view>
+    <button open-type="contact" session-from="weapp" class='background-color'>
+    </button>
+      <image src='images/right.png' class='arrow'></image>
+  </view>
+  <view class='line'></view>
+
+  <view class='tab'bindtap='collect'>
+    <view class='left'>
+      <image src='images/collect.png' class='leftImage'></image>
+      <text class='text'>我的收藏</text>
+    </view>
+    <image src='images/right.png' class='arrow'></image>
+  </view>
+  <view class='line'></view>
+
+  <view class='tab'bindtap='deleteBrowsing'>
+    <view class='left'>
+      <image src='images/delete.png' class='leftImage'></image>
+      <text class='text'>清除记录</text>
+    </view>
+    <image src='images/right.png' class='arrow'></image>
+  </view>
+  <view class='line'></view>
+
+</view>

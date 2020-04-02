@@ -1,0 +1,38 @@
+<view class='classic-container'>
+
+  <view class='subject-title'>
+    <view class='left'>
+      <image  class="img" src="images/question.png" ></image>
+      <text class='title-name'>问题：</text>
+    </view>
+    <!-- <button class='background-color1' bindtap="actionSheetTap"> -->
+    <view class='right' bindtap='actionSheetTap'>
+      <view class='date'>
+        <text class='month'>选择</text>
+        <text class='year'>题型</text>
+      </view>
+      <image  class="img1" src="images/type1.png" ></image>
+    </view>
+  </view>
+
+  <view class='subject-content'>
+    <text class='content'>{{title_collect[index].title}}</text>
+  </view>
+
+  <view class='subject-operation' wx:if="{{!showAnswer}}">
+    <button class='background-color' bindtap="seeAnswer">查答案</button>
+    <button class='background-color' bindtap="nextQuestion">略过</button>
+  </view>
+  
+  <view class='subject-operation' wx:if="{{showAnswer}}">
+    <button class='background-color' bindtap="nextQuestion">下一题</button>
+    <button class='background-color' bindtap="collect">收藏</button>
+  </view>
+
+  <view class='subject-content' wx:if="{{showAnswer}}">
+    <wemark md="{{title_collect[index].answer}}" link highlight type="wemark"></wemark>
+    <!-- <text class='content'>{{title_collect[index].answer}}</text> -->
+  </view>
+
+
+</view>

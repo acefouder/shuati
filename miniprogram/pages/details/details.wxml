@@ -1,0 +1,27 @@
+<view class='classic-container'>
+
+  <view class='subject-title'>
+    <image  class="img" src="images/question.png" ></image>
+    <text class='title-name'>问题：</text>
+  </view>
+
+  <view class='subject-content'>
+    <text class='content'>{{title}}</text>
+  </view>
+
+  <view class='subject-operation' wx:if="{{!showAnswer}}">
+    <button class='background-color' bindtap="seeAnswer">查答案</button>
+  </view>
+  
+  <view class='subject-operation' wx:if="{{showAnswer}}">
+    <button class='background-color' bindtap="hideAnswer">隐藏它</button>
+  </view>
+
+  <view class='subject-content' wx:if="{{showAnswer}}">
+    <wemark md="{{answer}}" link highlight type="wemark"></wemark>
+    <!-- <text class='content'>{{answer}}</text> -->
+  </view>
+
+
+
+</view>

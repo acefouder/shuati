@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "v-listbox": "/components/listbox/listbox"
+  },
+  "navigationBarTitleText": "已刷题目"
+}

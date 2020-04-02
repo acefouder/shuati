@@ -1,0 +1,97 @@
+
+<view>
+
+<view class='container'>
+  
+</view>
+
+  <!-- <view class='classic-container'>
+
+    <view class=" weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">开始</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="time" value="{{maxStartTime}}" start="{{startTime}}" end="{{maxEndTime}}" bindchange="bindstartTimeChange">
+            <view class="weui-input">{{maxStartTime}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+
+    <view class=" weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">结束</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="time" value="{{maxEndTime}}" start="{{maxStartTime}}" end="{{endTime}}" bindchange="bindendTimeChange">
+            <view class="weui-input">{{maxEndTime}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+
+  </view> -->
+
+  <view >
+
+    <view class='text-area'>
+      <view class="page-section-title">活动内容</view>
+      <view class="page-section" >
+        <view class="textarea-wrp">
+          <textarea bindinput="text_input" style='background-color:#F8F8F8;margin-top:10rpx;min-height:100rpx' auto-height />
+        </view>
+      </view>
+    </view>
+
+    <view class="show-title">
+
+      <view class="page-section-gap">
+        <view class="page-section-title">radio</view>
+        <radio-group name="radio" bindchange="radioChange2">
+          <label><radio value="radio1"/>支出</label>
+          <label><radio value="radio2"/>收入</label>
+        </radio-group>
+      </view>
+
+      <radio-group name="radio" bindchange="radioChange">
+        <view class="title classic-container">
+          <radio value="0"/>
+          <view class='classic-img' style='background-color:red;'/> 
+          : 娱乐 
+        </view>
+        <view class="title classic-container">
+          <radio value="1"/>
+          <view class='classic-img' style='background-color:skyblue;'/> 
+          : 成长 
+        </view>
+        <view class="title classic-container">
+          <radio value="2"/>
+          <view class='classic-img' style='background-color:lime;'/> 
+          : 吃饭、睡觉 
+        </view>
+        <view class="title classic-container">
+          <radio value="3"/>
+          <view class='classic-img' style='background-color:#666666;'/> 
+          : 工作
+        </view>
+        <view class="title classic-container">
+          <radio value="4"/>
+          <view class='classic-img' style='background-color:goldenrod;'/> 
+          : 浪费
+        </view>
+      </radio-group>
+    </view>
+  </view>
+
+  <view bind:tap="submit" class='img-container'>
+    <view class='img-center'>
+      <image class='img' src="images/submit.png"></image>
+    </view>
+  </view>
+
+</view>
+
+  

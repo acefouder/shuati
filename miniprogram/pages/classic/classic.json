@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "v-epsoide": "/components/epsoide/epsoide",
+    "v-listbox": "/components/listbox/listbox",
+    "v-essay": "/components/essay/essay"
+  }
+}
